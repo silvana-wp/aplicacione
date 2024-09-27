@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo1">
+            <img src="imagenes/khea-youngflex.jpg" width="200px">
+        </div>
+        <form action="#" method="POST">
+            <h2>Formulario de Contacto</h2>
+
+            <div class="name-group">
+                <div>
+                    <label for="nombre">Nombre(s)</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <div class="group">
+                <p>
+                    <label for="Estatus">Municipio</label><br>
+                    <select name="Estado" id="Estatus" required>
+                        <option value="">Selecione</option>
+                        <option value="1">Ixtapaluca</option>
+                        <option value="2">Chalco</option>
+                        <option value="3">San Marcos</option>
+                    </select>
+                </p>
+                <div>
+                    <p>
+                        <label for="estado">Estado</label>
+                        <select name="text" id="estado" required>
+                            <option value="">selecione</option>
+                            <option value="1">Mexico</option>
+                            <option value="2">Zacatecas</option>
+                            <option value="3">Aguas Calientes</option>
+                        </select>
+                    </p>      
+                </div>
+                <div>
+                    <label for="cp">C.P.</label>
+                    <input type="text" id="cp" name="cp" required>
+                </div>
+            </div>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <label for="comentarios">Comentarios Adicionales</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+
+            <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Acepto Términos
+            </label>
+
+            <button type="submit">Remitir</button>
+        </form>
+    </div>
+</body>
+</html>
